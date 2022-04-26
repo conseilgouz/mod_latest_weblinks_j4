@@ -1,0 +1,13 @@
+<changelogs>
+	<changelog>
+		<element>mod_latest_weblinks</element>
+		<type>Module</type>
+		<version>2.0.0</version>
+        <note>
+            <item>Update : 22/10/2021</item>
+        </note>
+        <fix>
+            <item>Joomla 4 version</item>
+        </fix>
+	</changelog>
+</changelogs>
