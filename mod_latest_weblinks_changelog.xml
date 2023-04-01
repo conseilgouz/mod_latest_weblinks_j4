@@ -2,6 +2,17 @@
 	<changelog>
 		<element>mod_latest_weblinks</element>
 		<type>Module</type>
+		<version>2.0.2</version>
+        <note>
+            <item>Update : 01/04/2023</item>
+        </note>
+        <fix>
+            <item>Wrong update name</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>mod_latest_weblinks</element>
+		<type>Module</type>
 		<version>2.0.1</version>
         <note>
             <item>Update : 01/04/2023</item>
