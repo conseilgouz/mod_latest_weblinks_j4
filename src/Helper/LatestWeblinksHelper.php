@@ -1,12 +1,12 @@
 <?php
 /**
 * mod_latest_weblinks
-* Version			: 2.0.0
+* Version			: 2.0.1
 * Package			: Joomla 4.x.x
-* copyright 		: Copyright (C) 2021 ConseilGouz. All rights reserved.
+* copyright 		: Copyright (C) 2023 ConseilGouz. All rights reserved.
 * license    		: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
-namespace Joomla\Module\LatestWeblinks\Site\Helper;
+namespace ConseilGouz\Module\LatestWeblinks\Site\Helper;
 defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Router\Route;
@@ -31,7 +31,7 @@ class  LatestWeblinksHelper
 		{
 			foreach ($items as $item)
 			{
-				$item->link	= Route::_('index.php?option=com_weblinks&task=weblink.go&catid=' . $item->catid . ':'.$item->catalias.'&id=' . $item->id.':'.$item->alias);
+				$item->link	= 'index.php?option=com_weblinks&view=weblink&task=weblink.go&id=' . $item->id;
 				$result[] = $item;
 			}
 			return $result;

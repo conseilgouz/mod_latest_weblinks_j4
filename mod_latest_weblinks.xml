@@ -2,16 +2,16 @@
 <extension type="module" client="site" method="upgrade">
 	<name>Latest weblinks</name>
 	<author>ConseilGouz</author>
-	<creationDate>October 2021</creationDate>
-	<copyright>Copyright (C) 2021 ConseilGouz. All rights reserved.</copyright>
+	<creationDate>2023/04/01</creationDate>
+	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>2.0.0</version>
+	<version>2.0.1</version>
 	<description>LASTWLDESC</description>
-	<namespace path="src">Joomla\Module\LatestWeblinks</namespace>
+	<namespace path="src">ConseilGouz\Module\LatestWeblinks</namespace>
 	<scriptfile>script.php</scriptfile>
-	<changelogurl>https://www.conseilgouz.com/updates/mod_latest_weblinks_changelog.xml</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/conseilgouz/mod_latest_weblinks_j4/master/mod_latest_weblinks_changelog.xml</changelogurl>
 	
 	<files>
 		<filename module="mod_latest_weblinks">mod_latest_weblinks.php</filename>
@@ -27,7 +27,8 @@
 	
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
+			<fieldset name="basic" addfieldprefix="ConseilGouz\Module\LatestWeblinks\Site\Field">
+				<field name="version" type="version"  margintop="-3em" extension="mod_latest_weblinks"/>
 				<field
 					name="count"
 					type="text"
@@ -87,7 +88,7 @@
 		</fields>
 	</config>
 	<updateservers>
-	<server type="extension" name="Derniers liens web" priority="1">http://www.conseilgouz.com/updates/latest_weblinks.xml</server>
+	<server type="extension" name="Simple Isotope" priority="1">https://raw.githubusercontent.com/conseilgouz/updates_github/master/latest_weblinks.xml</server>
 	</updateservers>
 	
 	

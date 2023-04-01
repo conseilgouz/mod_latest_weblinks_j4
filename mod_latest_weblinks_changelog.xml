@@ -2,6 +2,24 @@
 	<changelog>
 		<element>mod_latest_weblinks</element>
 		<type>Module</type>
+		<version>2.0.1</version>
+        <note>
+            <item>Update : 01/04/2023</item>
+        </note>
+        <fix>
+            <item>SEF URL not working</item>
+			<item>ConseilGouz namespace</item>
+        </fix>
+		<change>
+			<item>Changelog/update server on github</item>
+		</change>
+		<addition>
+			<item>add dynamic version</item>
+		</addition>
+	</changelog>
+	<changelog>
+		<element>mod_latest_weblinks</element>
+		<type>Module</type>
 		<version>2.0.0</version>
         <note>
             <item>Update : 22/10/2021</item>

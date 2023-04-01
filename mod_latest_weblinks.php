@@ -8,7 +8,7 @@
  */
 
 defined('_JEXEC') or die;
-use Joomla\Module\LatestWeblinks\Site\Helper\LatestWeblinksHelper;
+use ConseilGouz\Module\LatestWeblinks\Site\Helper\LatestWeblinksHelper;
 use Joomla\CMS\Helper\ModuleHelper;
 
 $list = LatestWeblinksHelper::getWebLinks($params);
